@@ -31,6 +31,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    font-family: "Poppins",sans-serif;
 }
 
 .player-names div {

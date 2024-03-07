@@ -81,5 +81,3 @@ player2Input.addEventListener('input', updateLabels);
 
 
 
-
-
