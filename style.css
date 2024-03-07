@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
+    height: 150vh;
     background: linear-gradient(
         #e92e3d,
         #ff6e6a
     ) 0 100% no-repeat;
-    background-size: 100% 50%;
+    background-size: 100% 70%;
 }
 .container{
     width: 400px;
@@ -71,6 +71,7 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
+
 /* Winner text styling */
 #total {
     font-size: 24px;
@@ -93,3 +94,83 @@ button{
         transform: rotate(8deg);
     }
 }
+
+/* score board */
+@import url("http://fonts.cdnfonts.com/css/cursed-timer-ulil");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+h1 {
+  font-family: "Poppins",sans-serif;
+  font-size: 40px;
+  
+  
+}
+
+.container-2 {
+    width: 400px; /* Adjust width as needed */
+    padding: 50px;
+    position: absolute; /* Position absolute */
+    top: calc(100% + 20px); /* Position it just below the original container, adding margin */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    box-shadow: 0 15px 25px rgba(50,50,50,0.15);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center;
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+}
+
+.home,
+.guest {
+    width: calc(50% - 10px); /* Adjust width of each element */
+    border: 2px solid whitesmoke;
+    border-radius: 0.8em;
+    padding: 2em 3em;
+    font-weight: bold;
+    border-color: #e92e3d;
+}
+
+.home h1,
+.guest h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.home-score,
+.guest-score {
+    width: 50%;
+    max-width: 200px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.score {
+    background-color:white ;
+    color: black;
+    padding: 0.3em 0;
+    border-radius: 2em;
+    text-align: center;
+
+    
+
+}
+
+
+#btn {
+    position: absolute;
+    left: 50%;
+    top: 140%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 16px;
+  }

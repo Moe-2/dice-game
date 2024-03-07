@@ -17,11 +17,11 @@
         <div class="player-names">
             <div>
                 <label for="player1">Player 1 Name:</label>
-                <input type="text" id="player1" value="Player 1">
+                <input type="text" id="player1" value="">
             </div>
             <div>
                 <label for="player2">Player 2 Name:</label>
-                <input type="text" id="player2" value="Player 2">
+                <input type="text" id="player2" value="">
             </div>
         </div>
         <div class="dice-wrapper">
@@ -30,7 +30,38 @@
         </div>        
         <p id="total"></p>
         <button onclick="roll()">ROLL THE DICE</button>
+        
     </div>
+
+
+    
+    <!-- Scoreboard Table -->
+    <section class="score">
+        <div class="container-2">
+            <div class="home home-bg">
+                <p id="player1-name">player1</p>
+                <div class="home-score">
+                <h2 class="score h-score">0</h2>
+            </div>
+        </div>
+        <div class="guest guest-bg">    
+          <p id="player2-name">player2</p>
+          <div class="guest-score">
+            <h2 class="score g-score">0</h2>
+          </div>
+         
+        </div>
+    </section>  
+    
+    
+   
+        
+      
+      
+    
+
+
+
     <!-- Script  -->
     <script src="main.js"></script>
 </body>
