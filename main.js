@@ -1,7 +1,7 @@
 /*Rules
 1. if both names are not entered dice will not roll
 2. +1 point on the score board for the player that wins 
-3.
+3
 */
 
 let images = [
