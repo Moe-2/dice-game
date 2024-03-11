@@ -64,7 +64,7 @@ function resetScores() {
 }
 
 //Score board
-// Get the input fields, labels, and score elements
+// Gets the input fields, labels, and score elements
 const player1Input = document.getElementById('player1');
 const player1Label = document.getElementById('player1-name');
 const player2Input = document.getElementById('player2');
@@ -83,9 +83,10 @@ function updateLabels() {
 player1Input.addEventListener('input', updateLabels);
 player2Input.addEventListener('input', updateLabels);
 
+ 
 
+// Get the current input values and update the labels
 function resetGame() {
-    // Get the current input values and update the labels
     player1Name = player1Input.value;
     player2Name = player2Input.value;
     updateLabels();
