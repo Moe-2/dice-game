@@ -126,17 +126,17 @@ h1 {
   
 }
 .container-2 {
-    width: 400px; /* Adjust width as needed */
+    width: 400px; 
     padding: 50px;
-    position: absolute; /* Position absolute */
-    top: calc(100% + 20px); /* Position it just below the original container, adding margin */
+    position: absolute; 
+    top: calc(100% + 20px); 
     left: 50%;
     transform: translateX(-50%);
     background-color: #ffffff;
     box-shadow: 0 15px 25px rgba(50,50,50,0.15);
     border-radius: 8px;
     display: flex;
-    justify-content: space-between; /* Distribute space between elements */
+    justify-content: space-between; 
     align-items: center;
     font-family: "Poppins",sans-serif;
     text-align: center;
@@ -144,7 +144,7 @@ h1 {
 
 .home,
 .guest {
-    width: calc(50% - 10px); /* Adjust width of each element */
+    width: calc(50% - 10px); 
     border: 2px solid whitesmoke;
     border-radius: 0.8em;
     padding: 2em 3em;
