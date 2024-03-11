@@ -85,6 +85,7 @@ button{
     letter-spacing: 1px;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 21px;
 }
 
 /* Winner text styling */
@@ -140,6 +141,7 @@ h1 {
     align-items: center;
     font-family: "Poppins",sans-serif;
     text-align: center;
+    
 }
 
 .home,
