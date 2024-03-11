@@ -1,4 +1,4 @@
-# dice-game# Dice Game
+# Dice Game
 
 This is a simple web-based dice game built with HTML, CSS, and JavaScript. 
 
