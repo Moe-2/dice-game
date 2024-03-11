@@ -24,3 +24,5 @@ The game allows two players to roll dice and compete against each other. Each pl
 ## Installation
 
 No installation is required to play the game. Simply open the `index.html` file in a web browser.
+
+deployment link: https://moe-2.github.io/dice-game/
