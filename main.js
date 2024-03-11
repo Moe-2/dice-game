@@ -44,19 +44,24 @@ function roll() {
             winner = player2Name;
             guestScore.innerHTML = parseInt(guestScore.innerHTML) + 1;
         } else {
-            winner = "It's a tie!";
+            // It's a tie
+            winner = "It's a tie! You both";
+            homeScore.innerHTML = parseInt(homeScore.innerHTML) + 1;
+            guestScore.innerHTML = parseInt(guestScore.innerHTML) + 1;
         }
         console.log("It's a tie:", winner);
 
         // Update dice images
         document.querySelector("#die-1").setAttribute("src", images[dieOneValue]);
         document.querySelector("#die-2").setAttribute("src", images[dieTwoValue]);
-        document.querySelector("#total").innerHTML = winner + " wins!";
+        document.querySelector("#total").innerHTML = winner + " win!";
     }, 1000);
 }
 
-
-
+function resetScores() {
+    homeScore.innerHTML = "0";
+    guestScore.innerHTML = "0";
+}
 
 //Score board
 // Get the input fields, labels, and score elements
