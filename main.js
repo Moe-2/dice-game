@@ -1,7 +1,6 @@
 /*Rules
 1. if both names are not entered dice will not roll
 2. +1 point on the score board for the player that wins 
-3
 */
 
 let images = [
@@ -80,4 +79,33 @@ player1Input.addEventListener('input', updateLabels);
 player2Input.addEventListener('input', updateLabels);
 
 
-
+function resetGame() {
+    // Get the current input values and update the labels
+    player1Name = player1Input.value;
+    player2Name = player2Input.value;
+    updateLabels();
+  
+    // Determine the winner
+    let winner;
+    if (parseInt(homeScore.innerHTML) > parseInt(guestScore.innerHTML)) {
+      winner = player1Name;
+    } else if (parseInt(homeScore.innerHTML) < parseInt(guestScore.innerHTML)) {
+      winner = player2Name;
+    } else {
+      winner = "It's a tie!";
+    }
+  
+    // Display the winner message
+    alert(winner + " wins!");
+  
+    // Reset the score board
+    homeScore.innerHTML = 0;
+    guestScore.innerHTML = 0;
+  
+    // Clear the input fields
+    player1Input.value = "";
+    player2Input.value = "";
+  
+    // Update the labels with the input values
+    updateLabels();
+  }
