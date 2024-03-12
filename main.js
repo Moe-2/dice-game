@@ -45,7 +45,7 @@ function roll() {
             guestScore.innerHTML = parseInt(guestScore.innerHTML) + 1;
         } else {
             // It's a tie
-            winner = "It's a tie! You both";
+            winner = "It's a tie! nobody";
             homeScore.innerHTML = parseInt(homeScore.innerHTML) + 1;
             guestScore.innerHTML = parseInt(guestScore.innerHTML) + 1;
         }
@@ -54,7 +54,7 @@ function roll() {
         // Update dice images
         document.querySelector("#die-1").setAttribute("src", images[dieOneValue]);
         document.querySelector("#die-2").setAttribute("src", images[dieTwoValue]);
-        document.querySelector("#total").innerHTML = winner + " win!";
+        document.querySelector("#total").innerHTML = winner + " wins!";
     }, 1000);
 }
 
@@ -98,7 +98,7 @@ function resetGame() {
     } else if (parseInt(homeScore.innerHTML) < parseInt(guestScore.innerHTML)) {
       winner = player2Name;
     } else {
-      winner = "It's a tie!";
+      winner = "Nobody";
     }
   
     // Display the winner message
